@@ -12,7 +12,7 @@ on:
 name: build-site
 
 jobs:
-  build-book:
+  build-site:
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
