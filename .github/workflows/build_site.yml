@@ -18,7 +18,7 @@ jobs:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
 
-      - uses: r-lib/actions/setup-pandoc@v3
+      - uses: r-lib/actions/setup-pandoc@v2
   
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
