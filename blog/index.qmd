@@ -1,0 +1,12 @@
+---
+title: "Posts"
+page-layout: full
+listing:
+  contents: "posts/*/index.qmd"
+  type: grid
+  categories: true
+  filter-ui: true
+  sort-ui: true
+  image-placeholder: ../images/banner2.jpg
+  feed: true
+---

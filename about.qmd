@@ -1,0 +1,21 @@
+---
+title: "DON'T PANIC!"
+about:
+  template: jolla
+  image: images/logo.png
+  links:
+    - icon: mastodon
+      text: Mastodon
+      href: https://fediscience.org/@bjorn
+    - icon: github
+      text: Github
+      href: https://github.com/bbartholdy
+---
+
+::: {#hero-heading}
+
+A guide to life, the universe and everything. Well, actually that scope is
+probably a bit wide. A guide to a range of topics within that may be useful
+in the very small field of bioarchaeology.
+
+:::

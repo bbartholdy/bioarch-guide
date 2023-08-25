@@ -1,0 +1,50 @@
+---
+title: (To) The Bioarchaeologist's Guide
+categories: [about]
+date: "2023-09-01"
+date-modified: last-modified
+author: Bjørn
+description: A brief, inaugural post.
+toc: true
+---
+
+The Bioarchaeologist's Guide has this to say on the subject of
+The Bioarchaeologist's Guide:
+
+## Hello World
+
+This is the inaugural post for *The Bioarchaeologist's Guide*. The topic
+of this post will be *The Bioarchaeologist's Guide*. How it came to be,
+what will be its purpose, and who is this Bjørn person anyway?
+
+## How it came to be
+
+I have a bunch of notes on various topics that I wanted to share.
+Now I'm sharing them. That's it.
+
+## What will be its purpose
+
+The purpose of this site... blog... whatever it ends up being, is to
+provide a set of helpful resources on common topics in the field of
+bioarchaeology. Some may be interesting, others won't. Some may be
+broadly applicable to many fields, others won't. Topics will include
+**dental diseases**, **statistics**, the **R programming language**,
+and **open science**. It will not contain any entries on The Hitchhiker's
+Guide to the Galaxy, but there will be quotes.
+
+I have done my best to make sure this site... blog... thing, will be as
+accessible as possible. The colours were generated using
+[randoma11y](https://randoma11y.com/) and are chosen for their high contrast.
+The primary theme was styled after the BBC television adaptation of the
+Hitchhiker's Guide, but there is also a secondary theme with a lower contrast
+and [Atkinson Hyperlegible Font](https://brailleinstitute.org/freefont)
+(themes can be accessed using the switch in the navigation bar). I will also
+make sure that all images have alt text.
+
+## Who is this Bjørn person anyway?
+
+I am a human, and the errors will reflect that (and I'm genuinely happy
+to have them pointed out). I'm a PhD student doing bioarchaeology. I also
+dabble in Open Science and statistics.
+
+Well, that about wraps it up for this post.

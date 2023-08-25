@@ -1,0 +1,16 @@
+All posts will be licenced under
+[Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/).
+This means you can do whatever you want with the information provided on this
+site, just give me a little credit for its creation. I don't really care how
+you do it. That includes YOU, ChatGPT (and others). The source code is available
+at: <https://github.com/bbartholdy>
+
+Other open-source projects used:
+
+| Project | License |
+|---------|---------|
+| Quarto | [GNU GPL v2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html) |
+| SauceCode font | [SIL OPEN FONT LICENSE v1.1](http://scripts.sil.org/OFL) |
+| Fira font | [SIL OPEN FONT LICENSE v1.1](http://scripts.sil.org/OFL) |
+| Atkinson Hyperlegible Font | [Some sort of Copyright license](https://brailleinstitute.org/wp-content/uploads/2020/11/Atkinson-Hyperlegible-Font-License-2020-1104.pdf) |
+| Unsplash | [Unsplash license](https://unsplash.com/license) |

@@ -1,0 +1,55 @@
+/*-- scss:defaults --*/
+
+// Colours
+// inspired by the guide colours from the BBC television adaptation
+$black: #000000;
+$blue: #2894e7; // contrast 6.48
+$blue2: #1fb2e5; // contrast 8.56
+$green: #48a3a3; // contrast 7.04
+$green2: #1bc170; // contrast 8.91
+$green3: #46ab52; // contrast 7.21
+$green4: #29f08d; // contrast 13.94
+$yellow: #e6c823; // contrast 12.65
+$yellow2: #cb9b27; // contrast 8.26
+$yellow3: #d3bb57; // contrast 11.02
+$pink: #c12fa3; // don't panic
+
+// Base document colours
+$body-bg: $black;
+$body-color: $yellow2 !default;
+$link-color: $blue2;
+$text-muted: $blue;
+$progress-bg: $blue;
+
+// Navigation elements
+$footer-bg: $black;
+$footer-fg: $blue2;
+$navbar-bg: $black;
+$navbar-fg: $green;
+
+// Listing elements
+$grid-item-bg: $black;
+
+// Fonts
+$font-family-sans-serif: "SpaceMono";
+$font-family-monospace: "Sauce Code";
+
+/*-- scss:rules --*/
+
+h2 {
+    border-bottom: 1px solid $blue2;
+}
+
+// Listing formatting
+
+.quarto-grid-item {
+    background-color: $grid-item-bg;
+}
+
+.quarto-title-meta-heading {
+    color: $green;
+}
+
+.quarto-title-meta {
+    color: $blue;
+}

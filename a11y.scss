@@ -1,0 +1,73 @@
+/*-- scss:defaults --*/
+
+// High-contrast colours (from: https://randoma11y.com)
+
+$dark-grey: #272c2e;
+$darkgrey-tint: #424648;
+$darkgrey-tint2: #a1a3a4;
+$darkgrey-contrast: #dce7dc; // 11.11 contrast
+$darkgrey-contrast2: #dce4e7;
+$darkgrey-contrast3: #e7dce7;
+$darkgrey-contrast4: #e7dcdc;
+$darkgrey-contrast5: #dcdce7;
+
+$secondary: #008080;
+
+// Base document colours
+$body-bg: $darkgrey-contrast;
+$body-color: $dark-grey !default;
+$link-color: $secondary;
+$text-muted: #212121;
+$progress-bg: $darkgrey-contrast;
+
+// Code blocks
+//$code-block-bg: $darkgrey-tint;
+//$code-block-bg-alpha: -0.35;
+
+// Listing colours https://github.com/quarto-dev/quarto-cli/blob/ccb77a3ed5da3201f88ee1a756e46dd2180f9e7c/src/resources/projects/website/listing/quarto-listing.scss#L325
+$border-color: $darkgrey-tint;
+$grid-item-bg: $darkgrey-contrast;
+
+
+$list-group-color: $body-color !default;
+
+
+// Navigation element colours
+$footer-bg: $darkgrey-tint;
+$footer-fg: $darkgrey-contrast;
+$navbar-bg: $dark-grey;
+$navbar-fg: $darkgrey-contrast;
+
+// Fonts
+$font-family-sans-serif: "Atkinson Hyperlegible";
+$font-family-monospace: "Sauce Code";
+
+// Code blocks
+$code-block-bg-alpha: -.8;
+
+/*-- scss:rules --*/
+
+// Navbar colours
+
+
+// Document font
+
+h2 {
+    border-bottom: 1px solid $dark-grey;
+}
+
+// Listing formatting
+
+.quarto-grid-item {
+    background-color: $grid-item-bg;
+}
+
+.form-control,
+.form-select,
+//.quarto-category,
+.quarto-grid-item,
+.listing-category {
+    border-color: $border-color !important;
+}
+
+

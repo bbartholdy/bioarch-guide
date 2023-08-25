@@ -1,0 +1,44 @@
+project:
+  type: website
+
+website:
+  title: "BG2"
+  site-url: https://bioarch.guide
+  repo-url: "https://github.com/bbartholdy/bioarch-guide"
+  search: true
+  navbar:
+    title: false
+    pinned: false
+    logo: images/logo.png
+    left:
+      - text: Blog
+        href: blog/index.qmd
+      - text: About
+        href: about.qmd 
+    right:
+      - icon: github
+        href: https://github.com/bbartholdy
+        aria-label: GitHub
+      - icon: mastodon
+        href: https://fediscience.org/@bjorn
+        aria-label: Mastodon
+      - icon: rss
+        href: https://bioarch.guide/blog/index.xml
+  page-footer:
+    left: |
+      Powered by Quarto, a fascination for h2g2 <i class="nf nf-fa-thumbsup"></i>, and boredom
+    center: |
+      &copy; Bjørn Bartholdy 2023
+    right:
+      - icon: github
+        href: https://github.com/bbartholdy
+      - text: Licenses
+        href: license.qmd
+
+format:
+  html:
+    theme:
+      dark: h2g2.scss
+      light: a11y.scss
+    css: assets/css/fonts.css
+    code-copy: true

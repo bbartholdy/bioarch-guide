@@ -1,0 +1,33 @@
+---
+home-title: "The Bioarchaeologist's Guide"
+home-subtitle: To... well, a bunch of things really
+page-layout: custom
+include-before-body: hero.html
+css: index.css
+toc: false
+listing:
+  id: posts
+  contents: blog/posts/*/index.qmd
+  type: default  
+  sort: "date"
+  sort-ui: false
+  max-items: 2
+  fields:
+    - image
+    - title
+    - subtitle
+    - description
+    - date
+---
+
+
+::: {.content-block}
+
+::: {.content-text}
+## Recent posts
+
+::: {#posts}
+:::
+
+:::
+:::
