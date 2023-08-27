@@ -1,6 +1,9 @@
 project:
   type: website
 
+execute: 
+  freeze: auto
+
 website:
   title: "BG2"
   site-url: https://bioarch.guide
@@ -17,7 +20,7 @@ website:
         href: about.qmd 
     right:
       - icon: github
-        href: https://github.com/bbartholdy
+        href: https://github.com/bbartholdy/bioarch-guide
         aria-label: GitHub
       - icon: mastodon
         href: https://fediscience.org/@bjorn
@@ -26,9 +29,9 @@ website:
         href: https://bioarch.guide/blog/index.xml
   page-footer:
     left: |
-      Powered by Quarto, a fascination for h2g2 <i class="nf nf-fa-thumbsup"></i>, and boredom
+      Powered by Quarto, Netlify, and boredom
     center: |
-      &copy; Bjørn Bartholdy 2023
+      Copyright, Bjørn Bartholdy 2023
     right:
       - icon: github
         href: https://github.com/bbartholdy

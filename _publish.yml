@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: 0b0d6a38-952e-4a7c-aaa3-a5881afe4ca2
+      url: 'https://bioarch-guide.netlify.app'
