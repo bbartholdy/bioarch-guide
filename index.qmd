@@ -7,7 +7,7 @@ css: index.css
 toc: false
 listing:
   id: posts
-  contents: blog/posts/*/index.qmd
+  contents: posts/blog/*/index.qmd
   type: default  
   sort: "date"
   sort-ui: false

@@ -1,0 +1,89 @@
+/* css styles */
+
+/*body {
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/banner.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/banner.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/banner.jpg");
+    background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/banner.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*#hero-home {
+    padding: 8em 0 14em 0;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+    #hero-home h1 {
+        font-size: 2.25em;
+        margin: 0 0 1em 0;
+        padding: 14px 0px 14px 0px;
+        border-top: 1.2px solid #dee2e6;
+        border-bottom: 1.2px solid #dee2e6;
+    }
+
+    #hero-home p {
+        font-size: 1.24em;
+        line-height: 1.4em;
+        text-align: center;
+    }
+
+    #hero-welcome {
+        background-color: #212121;
+        opacity: 0.6;
+        padding: 40px 0 20px 0;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+        border-top: 1px solid #dee2e6;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+        #hero-welcome p {
+            font-size: 1.24em;
+            line-height: 1.4em;
+            text-align: center;
+        }
+
+    #hero-welcome-box {
+        background-color: #212121;
+    }
+
+*/
+.content-block {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 24px;
+    margin-right: 24px;
+    /*background-color: rgba(0, 0, 0, 0.5);
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    /*border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;*/
+}
+      
+@media(min-width: 900px) {
+.content-block {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+}
+      
+@media (min-width: 1200px) {
+.content-block {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+}

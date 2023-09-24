@@ -2,11 +2,11 @@
 title: "Posts"
 page-layout: full
 listing:
-  contents: "posts/*/index.qmd"
+  contents: "*/index.qmd"
   type: grid
   categories: true
   filter-ui: true
   sort-ui: true
-  image-placeholder: ../images/banner2.jpg
+  image-placeholder: ../../images/banner.jpg
   feed: true
 ---

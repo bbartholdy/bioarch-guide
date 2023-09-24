@@ -1,0 +1,12 @@
+---
+title: "Guide Entries"
+page-layout: full
+listing:
+  contents: "./*/index.qmd"
+  type: grid
+  categories: true
+  filter-ui: true
+  sort-ui: true
+  image-placeholder: ../../images/banner.jpg
+  feed: true
+---

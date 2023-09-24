@@ -15,7 +15,9 @@ website:
     logo: images/logo.png
     left:
       - text: Blog
-        href: blog/index.qmd
+        href: posts/blog/index.qmd
+      - text: Entries
+        href: posts/entries/index.qmd
       - text: About
         href: about.qmd 
     right:

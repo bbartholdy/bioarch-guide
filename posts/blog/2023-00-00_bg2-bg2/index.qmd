@@ -1,7 +1,8 @@
 ---
 title: (To) The Bioarchaeologist's Guide
+draft: false
 categories: [about]
-date: "2023-09-01"
+date: "2023-09-24"
 date-modified: last-modified
 author: Bjørn
 description: A brief, inaugural post.
@@ -30,7 +31,14 @@ bioarchaeology. Some may be interesting, others won't. Some may be
 broadly applicable to many fields, others won't. Topics will include
 **dental diseases**, **statistics**, the **R programming language**,
 and **open science**. It will not contain any entries on The Hitchhiker's
-Guide to the Galaxy, but there will be quotes.
+Guide to the Galaxy, but there will be quotes. There are, at the time of
+writing, two types of resources: [Blog posts](../index.qmd) and 
+[Entries](../../entries/index.qmd). Blog posts, like the one you are reading
+now, are long, often opinionated---but still grounded in facts--- posts
+on a particular subject. If you don't care about my opinions and find my
+writing to be unnecessarily filled with h2g2 references that you don't
+understand and/or care about, you will often be able to find the essential
+parts of the blog posts in Entries. Basically the TL;DR.
 
 I have done my best to make sure this site... blog... thing, will be as
 accessible as possible. The colours were generated using
@@ -44,7 +52,7 @@ make sure that all images have alt text.
 ## Who is this Bjørn person anyway?
 
 I am a human, and the errors will reflect that (and I'm genuinely happy
-to have them pointed out). I'm a PhD student doing bioarchaeology. I also
-dabble in Open Science and statistics.
+to have them pointed out). I'm a PhD student doing bioarchaeology. I have
+also been known to fumble may way through topics like Open Science and statistics.
 
 Well, that about wraps it up for this post.
