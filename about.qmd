@@ -15,7 +15,8 @@ about:
 ::: {#hero-heading}
 
 A guide to life, the universe and everything. Well, actually that scope is
-probably a bit wide. A guide to a range of topics within that may be useful
-in the very small field of bioarchaeology.
+probably a bit wide. A guide to a range of topics that may be useful
+in the very small field of bioarchaeology, and some that may even be useful
+in other fields of study.
 
 :::
