@@ -45,5 +45,5 @@ format:
     theme:
       dark: h2g2.scss
       light: a11y.scss
-    css: assets/css/fonts.css
+    css: [assets/css/fonts.css, custom.css]
     code-copy: true

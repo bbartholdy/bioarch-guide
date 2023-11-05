@@ -2,7 +2,7 @@
 title: "Guide Entries"
 page-layout: full
 listing:
-  contents: "./*/index.qmd"
+  contents: "*/*.qmd"
   type: grid
   categories: true
   filter-ui: true
