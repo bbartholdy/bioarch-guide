@@ -3,7 +3,7 @@ title: "Posts"
 page-layout: full
 listing:
   contents: "*/index.qmd"
-  type: grid
+  type: default
   categories: true
   filter-ui: true
   sort-ui: true

@@ -20,3 +20,7 @@ in the very small field of bioarchaeology, and some that may even be useful
 in other fields of study.
 
 :::
+
+## Request topics
+
+You can request topics in [GitHub issues](https://github.com/bbartholdy/bioarch-guide/issues/new?assignees=&labels=topic&projects=&template=topic-request.md&title=%5BNEW+TOPIC%5D)
