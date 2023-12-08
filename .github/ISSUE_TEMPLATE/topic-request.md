@@ -2,7 +2,7 @@
 name: Topic request
 about: Suggest a topic to cover
 title: "[NEW TOPIC]"
-labels: ''
+labels: 'topic'
 assignees: ''
 
 ---
