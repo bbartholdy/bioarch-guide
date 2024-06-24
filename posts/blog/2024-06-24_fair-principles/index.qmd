@@ -7,8 +7,6 @@ date-modified: last-modified
 author: Bjørn
 description: A post outlining the FAIR Data Principles and providing tips on how to make your data FAIR.
 toc: true
-#bibliography: posts.bib
-#csl: apa.csl
 ---
 
 ![<https://book.fosteropenscience.eu/>](/images/FAIRdataprinciples_foster.png){fig-alt="Stick drawings of the FAIR principles. Findable is a stick drawing of a person with a microscope finding a sheet of paper with 1s and 0s and exclaiming 'AH!'. Accessible is a stick figure looking at a framed picture with a DOI pointing to the same sheet of 1s and 0s from before. Interoperable is a stick figure asking another stick figure 'How do you open a .xzq file?'. Reusable is a stick figure handing saying 'here' while handing a stack of papers with a note saying 'CC' to another stick figure."}

@@ -9,4 +9,5 @@ listing:
   sort-ui: true
   image-placeholder: ../../images/banner.jpg
   feed: true
+  fields: [image, date, title, author, reading-time, description, categories]
 ---
