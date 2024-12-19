@@ -38,6 +38,7 @@ install.packages(c("tidyverse", "patchwork"))
 
 ```{r}
 #| label: user-setup
+#| eval: false
 library(tidyverse)
 library(patchwork)
 dental_inv <- readr::read_csv("https://raw.githubusercontent.com/bbartholdy/dental-inv-plot/main/data/dental-inv.csv")
