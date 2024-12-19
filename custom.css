@@ -2,6 +2,6 @@
     font-size: x-large;
 }
 
-code {
+.cell-output pre code {
     padding: .125rem .25rem 2.125rem;
 }
