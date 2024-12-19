@@ -1,0 +1,187 @@
+---
+title: Plotting Dental Inventory with ggplot2
+image: /images/dental-inv-plot.png
+categories: [R, dental-anthropology]
+date: "2024-12-19"
+date-modified: last-modified
+author: Bjørn
+description: A tutorial on plotting dental data in ggplot2.
+toc: true
+---
+
+```{r}
+#| label: setup
+#| include: false
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(patchwork)
+```
+
+This is a tutorial on an intuitive (or at very least, pretty) way to visualise
+dental inventory in a sample. It requires only a basic knowledge of R, and, of
+course, that you have installed it along with RStudio.
+
+Required packages:
+
+- tidyverse
+- patchwork
+
+To install the packages (if needed):
+
+```{r}
+#| eval: false
+install.packages(c("tidyverse", "patchwork"))
+```
+
+### Load data and packages
+
+```{r}
+#| label: user-setup
+library(tidyverse)
+library(patchwork)
+dental_inv <- readr::read_csv("https://raw.githubusercontent.com/bbartholdy/dental-inv-plot/main/data/dental-inv.csv")
+```
+
+The variables are:
+
+| variable name | description |
+|----|----|
+| id | skeletal identifier |
+| t11:18; t21:28; t31:38; t41:48 | status of tooth (t + FDI notation). <br> p = present; m = missing; dna = removed for dna sampling; aml = antemortem loss. |
+
+![https://www.careforsmiles.com.au/images/FDI-tooth-numbering-adult.png](./img/FDI-tooth-numbering-adult.png)
+
+### Convert data to long format
+
+First step is to convert the data to long format with the `pivot_longer` function.
+This will take all of the tooth columns and combine them to two columns; one with
+the tooth name, and one with the tooth status.
+
+```{r}
+dental_inv_long <- dental_inv %>%
+  pivot_longer(-id, names_to = "tooth", values_to = "status")
+```
+
+```{r}
+dental_inv_long %>%
+  slice_head(n = 10) # show first 10 entries
+```
+
+It would also be useful to have a column that indicates to which region of the 
+mouth the tooth belongs.
+
+```{r}
+maxilla <- c(paste0("t", 11:18), paste0("t", 21:28))
+left <- c(paste0("t", 21:28), paste0("t", 31:38))
+
+dental_inv_long <- dental_inv %>%
+  pivot_longer(
+    t11:t48, names_to = "tooth",
+    values_to = "status"
+  ) %>%
+   mutate(
+    region = if_else(tooth %in% maxilla, "maxilla", "mandible"), 
+    side = if_else(tooth %in% left, "left", "right"), .before = status
+  )
+```
+
+
+### Prepare separate plots
+
+Indicate order of the teeth in each region as in the FDI diagram shown above. 
+starting from the upper right third molar. We will use this to reorder the 
+teeth shown in the plot.
+
+```{r tooth-order}
+upper_order <- c(paste0("t", 18:11), paste0("t", 21:28))
+lower_order <- c(paste0("t", 48:41), paste0("t", 31:38))
+upper_order
+lower_order
+```
+
+
+The plots for the maxilla and mandible are prepared separately, then combined
+with the [**patchwork**](https://patchwork.data-imaginist.com/) package.
+
+First, the plot of the maxillary dentition:
+
+```{r}
+# Plot for the maxillary dentition
+maxilla_pl <- dental_inv_long %>%
+  filter(region == "maxilla") %>% # we only want maxillary teeth
+  mutate(tooth = factor(tooth, levels = upper_order)) %>% # make sure the order on the plot is according to the order the teeth are positioned in the mouth
+  ggplot(aes(x = tooth, fill = status)) +
+    geom_bar(position = "stack") + # stacked bar plot
+    scale_x_discrete(position = "top") + # move x-axis text to top
+    scale_fill_viridis_d() # colour-blind-friendly pallette
+
+maxilla_pl
+```
+
+
+Then, the plot of the mandibular dentition:
+
+```{r}
+# Plot for the mandibular dentition
+mandible_pl <- dental_inv_long %>%
+  filter(region == "mandible") %>%
+  mutate(tooth = factor(tooth, levels = lower_order)) %>%
+  ggplot(aes(x = tooth, fill = status)) +
+    geom_bar(position = "stack") +
+    scale_fill_viridis_d()
+
+mandible_pl
+```
+
+
+### Combine plots
+
+**UPDATE:** The two dental plots are combined using the **patchwork** package. 
+Thanks [\@jfy133](https://genomic.social/@jfy133) for bringing it to my 
+attention! (and of course [\@thomasp85](https://fosstodon.org/@thomasp85), the 
+package developer).
+
+We will combine them using `/` instead of `+`, because we want one on top of the
+other to mimic the maxilla's and mandible's position in the mouth:
+
+```{r}
+maxilla_pl / mandible_pl
+```
+
+The `plot_layout()` function allows us to easily combine the shared
+legends and axes. 
+
+```{r}
+maxilla_pl / mandible_pl + plot_layout(guides = "collect", axis_titles = "collect")
+```
+
+
+We can also add shared theme elements
+
+```{r}
+maxilla_pl / mandible_pl + 
+  plot_layout(guides = "collect", axis_titles = "collect") & 
+  theme_minimal() +
+  theme(
+    panel.grid = element_blank(),
+    axis.title.x.top = element_blank() # remove the extra x-axis title
+  )
+```
+
+And done! This gives (in my opinion) a nice, intuitive overview of the dental
+inventory in a sample, and could also be used to look at dental diseases 
+(caries, calculus, periodontitis, etc).
+
+```{r}
+#| include: false
+maxilla_pl / mandible_pl + 
+  plot_layout(guides = "collect", axis_titles = "collect") & 
+  theme_minimal() +
+  theme(
+    panel.grid = element_blank(),
+    axis.title.x.top = element_blank(),
+    plot.background = element_rect(colour = "white")
+  )
+ggsave(here::here("images/dental-inv-plot.png"))
+```
