@@ -16,6 +16,7 @@ library(dplyr)
 library(tidyr)
 library(ggplot2)
 library(patchwork)
+dental_inv <- readr::read_csv("https://raw.githubusercontent.com/bbartholdy/dental-inv-plot/main/data/dental-inv.csv")
 ```
 
 This is a tutorial on an intuitive (or at very least, pretty) way to visualise
