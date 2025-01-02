@@ -21,6 +21,13 @@ in other fields of study.
 
 :::
 
+## Accessibility
+
+The default theme is high-contrast, but is mainly styled after the Hitchhiker's Guide to the Galaxy (the TV series).
+A more accessible theme is available if you use the 'dark mode' switch in the top right corner (top left on mobile).
+This theme uses softer colours (but still distinguishable) and the
+[Atkinson Hyperlegible font](https://www.brailleinstitute.org/freefont/).
+
 ## Request topics
 
 You can request topics in [GitHub issues](https://github.com/bbartholdy/bioarch-guide/issues/new?assignees=&labels=topic&projects=&template=topic-request.md&title=%5BNEW+TOPIC%5D)
