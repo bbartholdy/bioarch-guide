@@ -8,6 +8,7 @@ toc: false
 listing:
   id: posts
   contents: posts/blog/*/index.qmd
+  feed: true
   type: default  
   sort: "date desc"
   sort-ui: false

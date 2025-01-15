@@ -6,6 +6,7 @@ execute:
 
 website:
   title: "BG2"
+  description: "A site in which I rant about a number of things of varying utility to others."
   site-url: https://bioarch.guide
   repo-url: "https://github.com/bbartholdy/bioarch-guide"
   search: true
@@ -28,7 +29,7 @@ website:
         href: https://fediscience.org/@bjorn
         aria-label: Mastodon
       - icon: rss
-        href: https://bioarch.guide/blog/index.xml
+        href: index.xml
   page-footer:
     left: |
       Powered by Quarto, Netlify, and boredom
