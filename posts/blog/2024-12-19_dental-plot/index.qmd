@@ -1,7 +1,7 @@
 ---
 title: (To) Plotting Dental Inventory with ggplot2
 image: /images/dental-inv-plot.png
-categories: [R, dental-anthropology]
+categories: [Rstats, DentalAnth, DataViz]
 date: "2024-12-19"
 date-modified: last-modified
 author: Bjørn
