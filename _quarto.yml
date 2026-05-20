@@ -8,7 +8,7 @@ website:
   title: "BG2"
   description: "A site in which I rant about a number of things of varying utility to others."
   site-url: https://bioarch.guide
-  repo-url: "https://github.com/bbartholdy/bioarch-guide"
+  repo-url: "https://codeberg.org/bbartholdy/bioarch.guide"
   search: true
   navbar:
     title: false
@@ -22,9 +22,6 @@ website:
       - text: About
         href: about.qmd 
     right:
-      - icon: github
-        href: https://github.com/bbartholdy/bioarch-guide
-        aria-label: GitHub
       - icon: mastodon
         href: https://fediscience.org/@bjorn
         aria-label: Mastodon
@@ -34,12 +31,9 @@ website:
     left: |
       Powered by Quarto, Netlify, and boredom
     center: |
-      Copyright, some guy 2024
-    right:
-      - icon: github
-        href: https://github.com/bbartholdy
-      - text: Licenses
-        href: license.qmd
+      Copyright, some guy 2026
+    right: |
+      <a href="https://codeberg.org/bbartholdy/bioarch.guide" style="text-decoration: none;"><i class="nf nf-linux-codeberg"></i></a> [Licenses](license.qmd) [![](images/NeverByAi_04.svg)](https://ko-fi.com/s/4662b19f61)
 
 format:
   html:
